@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",
-    "@types/chart.js": "0.0.6",
+    "@types/chart.js": "0.0.12",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.26",

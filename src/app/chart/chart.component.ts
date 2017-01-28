@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import 'chart.js';
+import { Chart } from 'chart.js';
 import * as moment from 'moment';
 
 @Component({
