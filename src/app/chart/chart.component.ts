@@ -10,22 +10,22 @@ import * as moment from 'moment';
 export class ChartComponent implements AfterViewInit {
 
   @ViewChild('chart')
-  chartCanvas: ElementRef;
+  myCanvas;
 
-  context: CanvasRenderingContext2D;
+  //context: CanvasRenderingContext2D;
 
-  chart: any;
+  //chart: any;
 
-  constructor() { }
+  //constructor() { }
 
   private stringToDate(date: string): Date {
     return moment(date).toDate();
   }
 
   ngAfterViewInit() {
-    let canvas = this.chartCanvas.nativeElement;
-    this.context = canvas.getContext('2d');
-    this.chart = new Chart(this.context, {
+    let canvas = this.myCanvas.nativeElement;
+    //this.context = canvas.getContext('2d');
+    let chart = new Chart(canvas, {
       type: 'line',
       data: {
         datasets: [{
